@@ -28,7 +28,8 @@ Upon opening, the site should appear as so:
 ![HomePage](./docs/images/good-greens-port.png)
 
 The site offers both national and international search options. Upon entering a city name of the user's choice, the map will display surrounding restaurant options.
-![CitySearch](./docs/images/city-search-ref.png)
+
+![Screenshot 2023-02-13 at 13-31-47 Good Greens](https://user-images.githubusercontent.com/119015927/218579255-9fa23255-8300-4d07-a3db-a547010336b4.png)
 
 When choosing a "favorite restaurant from the search list, you will get an alert, and can access the site from your local storage on the "favorites" page:
 ![Favorites](./docs/images/favorites.png)
