@@ -959,6 +959,9 @@ there.
 }
 
 @media (max-width: 780px) {
+  #restaurant-list {
+    padding-top: 35%;
+  }
   .container {
     padding-top: 11%;
   }
@@ -970,7 +973,9 @@ there.
     padding: 20px;
     border-radius: 15px;
   }
-  @media (min-width: 320px) {
+ 
+  }
+  @media (max-width: 500px) {
     div.container {
       align-items: center;
       margin-top: 0%;
@@ -1009,5 +1014,4 @@ legend {
   margin-bottom: .5rem;
   font-weight: 600;
 }
-  }
 }
