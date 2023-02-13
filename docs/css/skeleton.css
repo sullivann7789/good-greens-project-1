@@ -910,7 +910,7 @@ there.
 
 
 /* Larger than mobile */
-@media (min-width: 320px) {}
+
 
 /* Larger than phablet (also point when grid becomes active) */
 @media (max-width: 650px) {
@@ -969,5 +969,45 @@ there.
     background-color: rgba(255, 255, 255, 0.8);
     padding: 20px;
     border-radius: 15px;
+  }
+  @media (min-width: 320px) {
+    div.container {
+      align-items: center;
+      margin-top: 0%;
+      width: 37%;
+      font-size: 3vw;
+      padding: 0%;
+      margin:0%;
+    }
+    .container{
+      padding: 0 0px;
+    }
+    h3{
+      font-size: 8vw;
+    }
+    #CSZ{
+      margin: 1vw;
+      width: 40%;
+    }
+    #zip{
+      justify-self: left;
+    }
+    pre,
+blockquote,
+dl,
+figure,
+table,
+p,
+ul,
+ol,
+form {
+  margin-bottom: 0.5rem;
+}
+label,
+legend {
+  display:inline;
+  margin-bottom: .5rem;
+  font-weight: 600;
+}
   }
 }
