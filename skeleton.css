@@ -659,9 +659,9 @@ label>.label-body {
 
 .favorites-nav {
   text-align: right;
-  padding: 20px;
   padding-top: 3.5vw;
   margin-bottom: 0;
+  padding-right: 2vw;
 }
 
 .favorites-header {
