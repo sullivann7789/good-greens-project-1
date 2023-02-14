@@ -183,6 +183,9 @@ sub {
 
 img {
   border: 0;
+  z-index: -1;
+  position: relative;
+  top: 3vw;
 }
 
 /**

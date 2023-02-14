@@ -350,13 +350,10 @@ div.container {
 /* Typography
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 h1,
-h2,
 h3,
 h4,
 h5,
 h6 {
-  margin-top: 0;
-  margin-bottom: 2rem;
   font-weight: 300;
 }
 
@@ -370,6 +367,8 @@ h2 {
   font-size: 3.6rem;
   line-height: 1.25;
   letter-spacing: -.1rem;
+  margin-top: -8vw;
+  font-weight: 300;
 }
 
 h3 {
@@ -648,19 +647,26 @@ label>.label-body {
 
 /*favorites list -- shavana*/
 
-.favorites-background-image {
-  background-image: url(https://post.healthline.com/wp-content/uploads/2021/08/healthy-eating-food-sweet-potato-kale-bowl-grain-vegan-1296x728-header-800x728.jpg);
-  background-size: cover;
+/*.favorites-background-image {
+  background-image: url(./images/storefront.png);
+  background-repeat: no-repeat;
+  background-size:30vw;
+  background-position-y: -6.5vw;
+  background-position-x:8vw;
+  background-color: #FFF;
   height: 100vh;
-}
+}*/
 
 .favorites-nav {
   text-align: right;
   padding: 20px;
+  padding-top: 3.5vw;
+  margin-bottom: 0;
 }
 
 .favorites-header {
-  text-align: center;
+  text-align: left;
+  margin-left: 12vw;
 }
 
 /*favorites page list formatting*/
