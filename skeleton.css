@@ -702,10 +702,6 @@ label>.label-body {
 
 /*about us + mission statement -- shavana*/
 
-#about-links {
-  color: white;
-}
-
 #about-links:hover {
   color: var(--good-green)
 }
