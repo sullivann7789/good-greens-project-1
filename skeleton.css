@@ -855,8 +855,7 @@ figure,
 table,
 p,
 ul,
-ol,
-form {
+ol{
   margin-bottom: 2.5rem;
 }
 
@@ -932,15 +931,10 @@ there.
 
 /* Larger than Desktop HD */
 @media (max-width: 1300px) {
-  .container {
-    padding-top: 7%;
-  }
 
   .translucent-form-overlay {
-    max-width: 300px;
     width: 100%;
     background-color: rgba(255, 255, 255, 0.8);
-    padding: 20px;
     border-radius: 15px;
   }
 }
@@ -954,8 +948,8 @@ there.
     max-width: 300px;
     width: 100%;
     background-color: rgba(255, 255, 255, 0.8);
-    padding: 20px;
     border-radius: 15px;
+    top: 8vw;
   }
 }
 
