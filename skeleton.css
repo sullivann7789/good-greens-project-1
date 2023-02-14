@@ -180,11 +180,10 @@ header {
 }*/
 
 .container {
-  position: static;
+  position: relative;
   padding: 0 20px;
-  top: 15%;
   z-index: 2;
-  padding-top: 5%;
+  width: 25vw;
 }
 
 #state {
@@ -406,6 +405,7 @@ h6 {
 
   h3 {
     font-size: 3.6rem;
+    margin-top: 1vw;
   }
 
   h4 {
@@ -592,7 +592,11 @@ label>.label-body {
   border-radius: 15px;
   display: flex;
   flex-direction: row;
+  padding-top: 0px;
+  position: absolute;
+  top: 6vw;
 }
+
 
 .translucent-form-overlay .columns.row {}
 
@@ -925,11 +929,6 @@ there.
 
 
 /* Larger than desktop */
-@media (max-width: 1600px) {
-  .container {
-    padding-top: 5.8%;
-  }
-}
 
 /* Larger than Desktop HD */
 @media (max-width: 1300px) {
