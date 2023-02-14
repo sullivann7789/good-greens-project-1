@@ -56,6 +56,12 @@ header {
   top: 18%;
 }
 
+@media(min-width: 1700px) {
+  #map{
+    height: 70%;
+  }
+}
+
 /* 620 pixels and smaller*/
 #restaurant-list {
   position: absolute;
@@ -594,7 +600,7 @@ label>.label-body {
   flex-direction: row;
   padding-top: 0px;
   position: absolute;
-  top: 6vw;
+  top: 8vw;
 }
 
 
