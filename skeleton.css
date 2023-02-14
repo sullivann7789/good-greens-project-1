@@ -334,8 +334,7 @@ body {
 
 div.container {
   align-items: center;
-  margin-top: 0%;
-  width: 370px;
+  margin-top: -1vw;
 }
 
 .searched-rest {
