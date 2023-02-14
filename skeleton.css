@@ -667,6 +667,7 @@ label>.label-body {
 .favorites-header {
   text-align: left;
   margin-left: 12vw;
+  z-index: -1;
 }
 
 /*favorites page list formatting*/
