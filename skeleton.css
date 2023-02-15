@@ -1,29 +1,4 @@
-/*
-* Skeleton V2.0.4
-* Copyright 2014, Dave Gamache
-* www.getskeleton.com
-* Free to use under the MIT license.
-* http://www.opensource.org/licenses/mit-license.php
-* 12/29/2014
-*/
 
-
-/* Table of contents
-––––––––––––––––––––––––––––––––––––––––––––––––––
-- Grid
-- Base Styles
-- Typography
-- Links
-- Buttons
-- Forms
-- Lists
-- Code
-- Tables
-- Spacing
-- Utilities
-- Clearing
-- Media Queries
-*/
 
 body {
   display: flex;
@@ -39,20 +14,12 @@ header {
 }
 
 #map {
-  /*left: 37%;
-  bottom: 20%;*/
   height: 80%;
   width: 100%;
   position: absolute !important;
-  /*border: #30A960;
-  
-  border-style: solid;
-  border-width: 10px;*/
-
   align-self: center;
   border-bottom: 3px solid var(--good-green);
   border-top: 3px solid var(--good-green);
-  /*left: 25%;*/
   top: 18%;
 }
 
@@ -62,7 +29,6 @@ header {
   }
 }
 
-/* 620 pixels and smaller*/
 #restaurant-list {
   position: absolute;
   width: 100%;
@@ -91,8 +57,6 @@ header {
   --good-green: #30A960;
 }
 
-
-/*alert animation*/
 @keyframes dialogue {
 
   from{visibility: hidden;}
@@ -109,54 +73,25 @@ header {
 
 }
 
-/* Grid
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-
-/*city searchbar*/
 #googlesearch {
   width: 84%;
 }
 
-/* For the polyfill */
+
 .-placeholder {
   color: #989595;
 }
 
-.-placeholder-input {
-  /*  ...  */
-}
 
 
 ::placeholder,
-/* CSS 3 */
+
 ::-moz-placeholder,
-/* Mozilla */
+
 ::-webkit-placeholder {
-  /* Webkit */
+
   color: #888;
 }
-
-/*@media(min-width: 620px) {
-  #googlesearch {
-    width: 170px;
-
-  }
-}
-
-@media(min-width: 720px) {
-  #googlesearch {
-    width: 200px;
-    /*720px*/
-/*  }
-}
-
-@media(min-width: 1000px) {
-  #googlesearch {
-    width: 220px;
-  }
-}
-
-/*zip code searchbar*/
 
 #zip {
   width: 90%;
@@ -165,25 +100,6 @@ header {
   margin-bottom: 0;
 }
 
-/*@media(min-width: 620px) {
-  #zip {
-    width: 170px;
-
-  }
-}
-
-@media(min-width: 720px) {
-  #zip {
-    width: 200px;
-    /*720px*/
-/*}
-}
-
-@media(min-width: 1000px) {
-  #zip {
-    width: 220px;
-  }
-}*/
 
 .container {
   position: relative;
@@ -226,83 +142,7 @@ header {
   visibility: hidden;
 }
 
-/* For devices larger than 400px */
-/*@media (min-width: 320px) {
-  .container {
-    width: 85%;
-    padding: 0; }
-}
 
-/* For devices larger than 550px */
-/*@media (min-width: 650px) {
-  .container {
-    width: 80%; }
-  .column,
-  .columns {
-    margin-left: 4%; }
-  .column:first-child,
-  .columns:first-child {
-    margin-left: 0; }
-
-  .one.column,
-  .one.columns                    { width: 4.66666666667%; }
-  .two.columns                    { width: 13.3333333333%; }
-  .three.columns                  { width: 22%;            }
-  .four.columns                   { width: 30.6666666667%; }
-  .five.columns                   { width: 39.3333333333%; }
-  .six.columns                    { width: 48%;            }
-  .seven.columns                  { width: 56.6666666667%; }
-  .eight.columns                  { width: 65.3333333333%; }
-  .nine.columns                   { width: 74.0%;          }
-  .ten.columns                    { width: 82.6666666667%; }
-  .eleven.columns                 { width: 91.3333333333%; }
-  .twelve.columns                 { width: 100%; margin-left: 0; }
-
-  .one-third.column               { width: 30.6666666667%; }
-  .two-thirds.column              { width: 65.3333333333%; }
-
-  .one-half.column                { width: 48%; }
-
-  /* Offsets */
-/*
-  .offset-by-one.column,
-  .offset-by-one.columns          { margin-left: 8.66666666667%; }
-  .offset-by-two.column,
-  .offset-by-two.columns          { margin-left: 17.3333333333%; }
-  .offset-by-three.column,
-  .offset-by-three.columns        { margin-left: 26%;            }
-  .offset-by-four.column,
-  .offset-by-four.columns         { margin-left: 34.6666666667%; }
-  .offset-by-five.column,
-  .offset-by-five.columns         { margin-left: 43.3333333333%; }
-  .offset-by-six.column,
-  .offset-by-six.columns          { margin-left: 52%;            }
-  .offset-by-seven.column,
-  .offset-by-seven.columns        { margin-left: 60.6666666667%; }
-  .offset-by-eight.column,
-  .offset-by-eight.columns        { margin-left: 69.3333333333%; }
-  .offset-by-nine.column,
-  .offset-by-nine.columns         { margin-left: 78.0%;          }
-  .offset-by-ten.column,
-  .offset-by-ten.columns          { margin-left: 86.6666666667%; }
-  .offset-by-eleven.column,
-  .offset-by-eleven.columns       { margin-left: 95.3333333333%; }
-
-  .offset-by-one-third.column,
-  .offset-by-one-third.columns    { margin-left: 34.6666666667%; }
-  .offset-by-two-thirds.column,
-  .offset-by-two-thirds.columns   { margin-left: 69.3333333333%; }
-
-  .offset-by-one-half.column,
-  .offset-by-one-half.columns     { margin-left: 52%; }
-
-}
-
-/* Base Styles
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-/* NOTE
-html is set to 62.5% so that all the REM measurements throughout Skeleton
-are based on 10px sizing. So basically 1.5rem = 15px :) */
 html {
   font-size: 62.5%;
 }
@@ -310,7 +150,6 @@ html {
 
 body {
   font-size: 1.5em;
-  /* currently ems cause chrome bug misinterpreting rems on body element */
   line-height: 1.6;
   font-weight: 400;
   font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -321,7 +160,6 @@ body {
 
 
 .title {
-  /*-sasha*/
   color: var(--good-green);
   padding: 10px;
   margin: 0;
@@ -351,8 +189,6 @@ div.container {
   font-weight: 400;
 }
 
-/* Typography
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
 h1,
 h3,
 h4,
@@ -399,7 +235,6 @@ h6 {
   letter-spacing: 0;
 }
 
-/* Larger than phablet */
 @media (min-width: 650px) {
   h1 {
     font-size: 5.0rem;
@@ -431,9 +266,6 @@ p {
   margin-top: 0;
 }
 
-
-/* Links (changed link color to good green-Sasha)
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
 a {
   color: var(--good-green);
   ;
@@ -443,10 +275,6 @@ a:hover {
   text-decoration: underline;
 }
 
-
-/* Buttons
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-/*MAIN SEARCH BUTTON --Sasha*/
 .button,
 button,
 input[type="submit"],
@@ -511,9 +339,6 @@ input[type="button"].button-primary:focus {
   border-color: #1EAEDB;
 }
 
-
-/* Forms
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
 input[type="email"],
 input[type="number"],
 input[type="search"],
@@ -525,15 +350,12 @@ textarea,
 select {
   height: 38px;
   padding: 6px 10px;
-  /* The 6px vertically centers text on FF, ignored by Webkit */
   background-color: #fff;
   border: 1px solid #D1D1D1;
   border-radius: 4px;
   box-shadow: none;
   box-sizing: border-box;
 }
-
-/* Removes awkward default styles on some inputs for iOS */
 input[type="email"],
 input[type="number"],
 input[type="search"],
@@ -589,7 +411,6 @@ label>.label-body {
   font-weight: normal;
 }
 
-/*search form --added by Sasha*/
 .translucent-form-overlay {
   max-width: 400px;
   width: 100%;
@@ -603,8 +424,6 @@ label>.label-body {
   top: 8vw;
 }
 
-
-.translucent-form-overlay .columns.row {}
 
 .translucent-form-overlay input:focus {
   color: #8a8a8a !important;
@@ -654,17 +473,6 @@ label>.label-body {
   margin-bottom: 5px;
 }
 
-/*favorites list -- shavana*/
-
-/*.favorites-background-image {
-  background-image: url(./images/storefront.png);
-  background-repeat: no-repeat;
-  background-size:30vw;
-  background-position-y: -6.5vw;
-  background-position-x:8vw;
-  background-color: #FFF;
-  height: 100vh;
-}*/
 
 .favorites-nav {
   text-align: right;
@@ -679,7 +487,6 @@ label>.label-body {
   z-index: -1;
 }
 
-/*favorites page list formatting*/
 
 #favorites-list-container {
   position: relative;
@@ -708,8 +515,6 @@ label>.label-body {
   border-radius: 5px;
   border-width: 10px;
 }
-
-/*about us + mission statement -- shavana*/
 
 #about-links:hover {
   color: var(--good-green)
@@ -748,31 +553,6 @@ label>.label-body {
   text-align: center;
 }
 
-/*for devices wider than 550px -sasha*/
-/*@media (min-width: 650px){
-    div.container{
-      margin: 0;
-      justify-content: flex-start;
-      
-    }
-    div.one-half.column{
-      margin-top: 25%;
-    }
-    .translucent-form-overlay{
-      margin: 2px 50px 20px 0;
-      position: relative;
-      bottom: 180px;
-      max-width: 350px;
-    }
-    .searched-rest{
-      display: inline-block;
-      position: relative;
-      top: 60px;
-    }
-  }
-
-/* Lists
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
 ul {
   list-style: circle inside;
 }
@@ -801,8 +581,6 @@ li {
   width: 90%;
 }
 
-/* Code
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
 code {
   padding: .2rem .5rem;
   margin: 0 .2rem;
@@ -819,9 +597,6 @@ pre>code {
   white-space: pre;
 }
 
-
-/* Tables
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
 th,
 td {
   padding: 12px 15px;
@@ -839,9 +614,6 @@ td:last-child {
   padding-right: 0;
 }
 
-
-/* Spacing
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
 button,
 .button {
   margin-bottom: 1rem;
@@ -865,9 +637,6 @@ ol{
   margin-bottom: 2.5rem;
 }
 
-
-/* Utilities
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
 .u-full-width {
   width: 100%;
   box-sizing: border-box;
@@ -886,9 +655,6 @@ ol{
   float: left;
 }
 
-
-/* Misc
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
 hr {
   margin-top: 3rem;
   margin-bottom: 3.5rem;
@@ -896,11 +662,6 @@ hr {
   border-top: 1px solid #E1E1E1;
 }
 
-
-/* Clearing
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-
-/* Self Clearing Goodness */
 .container:after,
 .row:after,
 .u-cf {
@@ -909,33 +670,12 @@ hr {
   clear: both;
 }
 
-
-/* Media Queries
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-/*
-Note: The best way to structure the use of media queries is to create the queries
-near the relevant code. For example, if you wanted to change the styles for buttons
-on small devices, paste the mobile query code up in the buttons section and style it
-there.
-*/
-
-
-/* Larger than mobile */
-
-
-/* Larger than phablet (also point when grid becomes active) */
 @media (max-width: 650px) {
   #restaurant-list {
     padding-top: 35%;
   }
 }
 
-/* Larger than tablet */
-
-
-/* Larger than desktop */
-
-/* Larger than Desktop HD */
 @media (max-width: 1300px) {
 
   .translucent-form-overlay {
